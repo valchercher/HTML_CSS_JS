@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.containeur{
+    padding: 12% 12%;
+    display: flex;
+    justify-content: center;
+    background-color:black;
+}
+.carre{
+   
+    border: 3px solid white;
+    background-color: red;
+    padding: 10% 10%;
+    transition:border 10s  ease;
+    position: relative;
+    
+}
+.enfant{
+   
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 3px solid white;
+    background-color: red;
+    padding: 7% 7%;
+    transform: rotate(45deg);
+    position: absolute;
+    transition:20s border ease;
+    
+   
+}
+.enfant:hover{
+    border: 9px solid white;
+    border-left: none;
+    border-right: none;
+}
+.carrehover{
+    border: 9px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.text{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 35%;
+    font-size: 30px;
+    transform: rotate(-45deg); 
+    
+}
+.text>div:nth-child(3){
+    color: white;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="content">
+        <form action="">
+            
+                <div class="champ conteneur">
+                    <input type="text" id="champtext" readonly>
+                </div>
+                <div class="champR conteneur">
+                    <input type="text" id="champresult" readonly>        
+                </div>
+            <div class="toggle">
+                <input type="checkbox" name="" id="onOff" class="on_off">
+                <label for="" class="onbtn">on</label>
+                <label for="" class="offbtn">off</label>
+            </div>
+            <div class="desactive">
+                <input type="button" value="7" onclick="valClick('7')">
+                <input type="button" value="8" onclick="valClick('8')">
+                <input type="button" value="9" onclick="valClick('9')">
+                <input type="button" value="AC" onclick="vider('AC')">
+                <input type="button" value="DE" onclick="effacer('DE')">
+                
+            </div>
+            <div class="desactive">
+                <input type="button" value="4" onclick="valClick('4')">
+                <input type="button" value="5" onclick="valClick('5')">
+                <input type="button" value="6" onclick="valClick('6')">
+                <input type="button" value="*" onclick="operateur('*')">
+                <input type="button" value="/" onclick="operateur('/')">
+            </div>
+            <div class="desactive">
+                <input type="button" value="1" onclick="valClick('1')">
+                <input type="button" value="2" onclick="valClick('2')">
+                <input type="button" value="3" onclick="valClick('3')">
+                <input type="button" value="+" onclick="operateur('+')">
+                <input type="button" value="-" onclick="operateur('-')">
+            </div>
+            <div class="desactive">
+                <input type="button" value="0" onclick="valClick('0')">
+                <input type="button" value="." onclick="valClick('.')">
+                <input type="button" value="EXP"  onclick="operateur('E')">
+                <input type="button" value="Ans" onclick="Ans('Ans')">
+                <input type="button" value="=" id="egal">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

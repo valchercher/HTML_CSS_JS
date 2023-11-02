@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.
+css"integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <div class="conteneur">
+        <dix class="box1">
+            <div class="search">
+                <input type="text" id="search" placeholder="search">
+            </div>
+            <div class="admit">
+                <!-- enseignants -->
+                <div class="enseignant box">
+                    <div id="administ">
+                        <span>
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        </span>
+                        <ul>6</ul>
+                    </div>
+                    <div id="administ" class="ad1">
+                        <span>enseign...</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <!-- salle -->
+                <div class="salle box">
+                    <div id="administ">
+                        <span class="house">
+                            <i class="fa-sharp fa-solid fa-house"></i>
+                        </span>
+                        <ul>6</ul>
+                    </div>
+                    <div id="administ" class="ad1">
+                        <span>salles</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <!-- classes -->
+                <div class="classe box">
+                    <div id="administ">
+                        <span id="fa-users">
+                            <i class="fa-sharp fa-solid fa-users"></i>
+                        </span>
+                        <ul>6</ul>
+                    </div>
+                    <div id="administ" class="ad1">
+                        <span>classes</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <!-- modules de cours -->
+                <div class="module box">
+                    <div id="administ">
+                        <span>
+                        <i class="fa-solid fa-trash"></i>
+
+                        </span>
+                        <ul>6</ul>
+                    </div>
+                    <div id="administ" class="ad1">
+                        <span>modules</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="select">
+                <select name="" class="selection"></select>
+            </div>
+        </dix>
+        <div class="main">
+            <div class="box2">
+               <div class="anime">
+                 <div class="planing">
+                    <span>planning:</span>
+                    <span id="afficherplanning"></span>
+                </div> 
+                <input type="checkbox" id="onbtn">
+               </div>
+                <div class="cours">4 cours</div>
+            </div>
+            <div class="box3">
+                <div class="heures">
+                    <div id="heure">
+                        <div>8H</div>
+                        <div>9H</div>
+                        <div>10H</div>
+                        <div>11H</div>
+                        <div>12H</div>
+                        <div>13H</div>
+                        <div>14H</div>
+                        <div>15H</div>
+                        <div>16H</div>
+                        <div>17H</div>
+                    </div>
+                    
+                </div>
+                <div>
+                     <div class="day">
+                        <div class="jour">
+                            <div id="chColor">LUNDI</div>
+                        <i class="ajouter lund fa-solid fa-plus" id="1"></i>
+                        </div>
+                        <div class="caling" id="1"></div>
+                        
+                     </div>
+                     <div class="day" id="day">
+                        <div class="jour">
+                            <div id="chColor ">MARDI</div>
+                        <i  class="ajouter mard fa-solid fa-plus" id="2"></i>
+                        </div>
+                        <div class="caling" id="2"></div>
+                        
+                     </div>
+                     <div class="day">
+                        <div class="jour day">
+                            <div id="chColor">MERCREDI</div>
+                        <i class="ajouter mercred fa-solid fa-plus" id="3"></i>
+                        </div>
+                        <div class="caling" id="3"></div>
+                        
+                     </div>
+                     <div class="day">
+                        <div class="jour">
+                            <div id="chColor">JEUDI</div>
+                        <i class="ajouter jeud fa-solid fa-plus" id="4"></i>
+                        </div>
+                        <div class="caling" id="4"></div>                       
+                     </div>
+                     <div class="day">
+                        <div class="jour">
+                            <div id="chColor">VENDREDI</div>
+                        <i class="ajouter vend fa-solid fa-plus" id="5"></i>
+                        </div>
+                        <div class="caling" id="5"></div>                       
+                     </div>
+                     <div class="day">
+                        <div class="jour">
+                            <div id="chColor">SAMEDI</div>
+                        <i class="ajouter samd fa-solid fa-plus" id="6"></i>
+                        </div>
+                        <div class="caling" id="6"></div>                        
+                     </div>                   
+                </div>
+            </div> 
+        </div>      
+    </div>
+    <!-- module title -->
+    <fieldset  class="fiel">
+        <div class="modaleContent" >
+            <div class="modaleTitle">Planning Day</div>
+            <div class="mainModale">
+                <div class="adt">
+                    <span>Module</span>
+                    <span>Enseignant</span>
+                    <span>SALLE</span>
+                    <span>Heure de Début</span>
+                    <span>Heure de Fin</span>
+                </div>
+                <div class="selected">
+                    <select class="selectModules" name="" id="1">
+                        <!-- <option value="">Choisir modules</option>
+                        <option value="1">Algo</option>
+                        <option value="2">PHP</option>
+                        <option value="3">PYTHON</option>
+                        <option value="4">LC</option>
+                        <option value="5">JAVASCRIPT</option> -->
+                    </select>
+                    <select name="" id="2" class="selectEnseignants"> </select>
+                    <select name="" id="3" class="selectSalles">
+                        <!-- <option value="">Choisir prof</option>
+                        <option value="1">Aly</option>
+                        <option value="2">Baila</option>
+                        <option value="3">Mbaye</option>
+                        <option value="4">Ndoye</option>
+                        <option value="5">Djiby</option> -->
+                    </select>
+                    <select name="" id="4" class="selectheureDebuts">
+                        <!-- <option value="">Choisir salles</option>
+                        <option value="1">101</option>
+                        <option value="2"></option>
+                        <option value="3">PYTHON</option>
+                        <option value="4">LC</option>
+                        <option value="5">JAVASCRIPT</option> -->
+                    </select>
+                    <select name="" id="5" class="selectheureFins"></select>
+                </div>
+            </div>
+            <div class="messageErreur">
+                
+            </div>
+            <div class="footerModale">  
+                <button class="bouton" id="ajoutBtn">Ajouter</button>
+                <button class="bouton" id="btnQuitter">Annuler</button>
+            </div>
+        </div>
+       </fieldset> 
+    <script src="script.js"></script>
+   
+</body>
+</html>

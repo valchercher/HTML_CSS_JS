@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculatrice</title>
+  </head>
+  <body>
+    <h1>Calculatrice</h1>
+    <input type="text" id="resultat" disabled>
+    <br>
+    <button onclick="ajouterChiffre(1)">1</button>
+    <button onclick="ajouterChiffre(2)">2</button>
+    <button onclick="ajouterChiffre(3)">3</button>
+    <button onclick="ajouterOperateur('+')">+</button>
+    <br>
+    <button onclick="ajouterChiffre(4)">4</button>
+    <button onclick="ajouterChiffre(5)">5</button>
+    <button onclick="ajouterChiffre(6)">6</button>
+    <button onclick="ajouterOperateur('-')">-</button>
+    <br>
+    <button onclick="ajouterChiffre(7)">7</button>
+    <button onclick="ajouterChiffre(8)">8</button>
+    <button onclick="ajouterChiffre(9)">9</button>
+    <button onclick="ajouterOperateur('*')">*</button>
+    <br>
+    <button onclick="ajouterChiffre(0)">0</button>
+    <button onclick="calculer()">=</button>
+    <button onclick="ajouterOperateur('/')">/</button>
+
+    <script>
+      var resultat = document.getElementById("resultat");
+      var operateur;
+      var chiffre1;
+      var chiffre2;
+
+      function ajouterChiffre(chiffre) {
+        if (resultat.value == "0") {
+          resultat.value = chiffre;
+        } else {
+          resultat.value += chiffre;
+        }
+      }
+
+      function ajouterOperateur(op) {
+        operateur = op;
+        chiffre1 = parseInt(resultat.value);
+        resultat.value = "0";
+      }
+
+      function calculer() {
+        chiffre2 = parseInt(resultat.value);
+        var resultatFinal;
+
+        switch (operateur) {
+          case "+":
+            resultatFinal = chiffre1 + chiffre2;
+            break;
+          case "-":
+            resultatFinal = chiffre1 - chiffre2;
+            break;
+          case "*":
+            resultatFinal = chiffre1 * chiffre2;
+            break;
+          case "/":
+            resultatFinal = chiffre1 / chiffre2;
+            break;
+        }
+
+        resultat.value = resultatFinal;
+      }
+    </script>
+  </body>
+</html>

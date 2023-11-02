@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mot_De_Passe</title>
+</head>
+<body>
+    <div class="conteneur">
+        <div class="header">
+            <div class="resultat">
+                <textarea id="password"></textarea>
+                <button class="btn" id="clipboard" >
+                    <i class="fa-regular fa-clipboard" ></i>
+                </button>
+            </div>
+		
+
+            <p>Longueur du Mot de Passe <input  type="number" id="taille"  min="0" max="20"></p>
+            <p>Contient des Lettres Majuscules <input type="checkbox" id="majuscule" ></p>
+            <p>Contient des Lettres Minuscules <input type="checkbox" id="minuscule" ></p>
+            <p>Contient des Nombres <input type="checkbox" id="chiffre" ></p>
+            <p>Contient des Caractères Spéciaux <input type="checkbox" id="symbole" ></p>
+            <button id="boutton" onclick="genererMotpass()" >Generer Le mot de Passe</button>
+            
+          
+
+
+
+        </div>
+    </div>
+    <script src="TP4.js"> </script>
+</body>
+</html>

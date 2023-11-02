@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notifications</title>
+    <meta charset="utf-8">
+    <style>
+      #notification {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Notifications</h1>
+    <button id="boutonNotification">Afficher une notification</button>
+    <div id="notification"></div>
+
+    <script>
+      function afficherNotification(message) {
+        var notification = document.getElementById("notification");
+        notification.textContent = message;
+        notification.style.display = "block";
+        setTimeout(function () {
+          notification.style.display = "none";
+        }, 5000); // Masquer la notification après 5 secondes
+      }
+
+      var boutonNotification = document.getElementById("boutonNotification");
+      boutonNotification.addEventListener("click", function () {
+        afficherNotification("Ceci est une notification !");
+      });
+    </script>
+  </body>
+</html>

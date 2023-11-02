@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.conteneur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 200px 100px;
+    
+}
+.over5{
+    padding: 70px 150px;
+    border: 5px solid ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+    background-color: rgb(219, 223, 213);
+    
+}
+
+
+.over5::before{
+    content:"Hoveravble";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: blue;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(1);
+   transform-origin: center;
+   transition: text-decoration;
+   transition-property:transform;
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+}
+.over5:hover::before{
+    
+    font-size: 100px;
+    transform: scaleY(1);
+   
+}
+
+.over5::after{
+    content:"Hoveravble";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(220, 16, 81);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: center;
+   transition: text-decoration;
+   transition-property:transform;
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+}
+.over5:hover::after{
+    
+    font-size: 30px;
+    transform: scaleX(1);
+   
+}

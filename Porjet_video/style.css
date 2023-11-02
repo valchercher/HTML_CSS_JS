@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#conteneur {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: 850px;
+    display: flex;
+    justify-content:space-between;
+    gap: 0;
+    
+}
+
+.box1{
+    width: 27%;
+    height: 864px;
+    background-color: #3f3939;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+   
+}
+.cours{
+    width: 1220px;
+    height: 150px;
+   background-color: #262121;
+   border-top-right-radius: 25px;
+   
+}
+.box2{
+    
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   
+} 
+.box2 h2{
+    color: #eee;
+    font-size: 35px;
+    margin-left: 5px;
+}
+.box2 input{
+    margin-top: 2%;
+}
+.cours span{
+    color: #fff;
+    margin-left: 25px;
+    font-size: 24px;
+    margin-top: 15px;
+
+}
+.box3{
+    width: 1220px;
+    height: 750px;
+   background-color: rgb(29, 27, 27);
+   border-bottom-right-radius: 20px;
+  
+} 
+#search{
+    margin-left:1rem;
+    margin-top: 4rem;
+    height: 3.5rem;
+    width: 85%;
+    border: 1px solid #eee;
+    border-radius: 15px ;
+    background-color: transparent;
+}
+#search:focus{
+    background-color: rgb(8, 26, 8);
+    color: #fff;
+}
+.admit{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: center;
+    
+}
+.admit div{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(158, 149, 149);
+    border-radius: 20px;
+
+}
+.enseignant,.salle,.classe,.module{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+.enseignant span{
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    
+}
+
+
+.salle span{
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    
+   
+}
+
+.classe span{
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    
+}
+
+#solid1,#solid2,#solid3,#solid4{
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50% ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#solid1{
+    
+    background-color: rgb(18, 152, 248);     
+}
+#solid2{
+    background-color: rgb(7, 176, 7);
+}
+#solid3{
+    background-color: orange;
+}
+#solid4{
+    background-color: red;
+}
+.module span{
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    color: white;
+    
+}
+.admit span{
+    border: none;
+   /* font-size: 25px; */
+    color: white;
+}
+#plus{
+    font-size: 30px;
+}
+#plusMain{
+    font-size: 45px;
+    color: green;
+}
+/* .fa-light{
+    background-color:red ;
+    width: 40px;
+    height: 50px;
+} */
+.selection{
+    margin-left:1rem;
+    margin-top: 4rem;
+    height: 3.5rem;
+    width: 90%;
+    border: 1px solid #eee;
+    border-radius: 10px ;
+    background-color: #fff;
+    font-size: 25px;
+}
+input[type="checkbox"]{
+    position: relative;
+    width: 70px;
+    height: 32px;
+    background-color: #fff;
+    -webkit-appearance: none;
+    border-radius: 20px;
+    outline: none;
+    transition: .2s;
+    box-shadow: insert 0 0 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+input:checked[type="checkbox"]{
+    background: #16191b;
+}
+input[type="checkbox"]::before{
+    position: absolute;
+    content: "";
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background:#000;
+    border-radius: 50%;
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(247, 231, 231, 0.2);
+    transition: .2s;
+}
+input:checked[type="checkbox"]::before{
+    left: 35px;
+    background-color: #fff;
+}
+.heure{
+    background-color: rgb(63, 60, 60);
+    
+   border-radius: 30px;
+   
+}
+.heure div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 80px;
+    margin-left: 10%;
+}
+.heure span{
+    color: #fff;
+  
+}
+.jourOuvrable{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #181717;
+    border-bottom-right-radius: 20px;
+    margin-top: 1px;
+}
+.jourOuvrable div{
+    gap: 1px;
+    width:  1220px;
+    height: 115px;
+    
+    color: #fff;
+    border: 1px solid transparent ;
+    background-color: rgb(106, 141, 145);
+    display: flex;
+  
+}
+.lundi,.mardi,.mercredi,.jeudi,.vendredi,.samedi{
+    display: flex;
+    border-radius: 15px;
+
+   
+}
+
+.module{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .module .fa-sharp{
+    background-color: r;
+    width: 40px;
+    height: 30px;
+    color: #000;
+} */
+.lundi{
+    display: flex;
+    align-items: center;
+   
+    
+}
+#lund{
+    display: flex;
+    background-color:rgb(106, 141, 145);
+    text-align: center;
+    
+    
+}
+#lund{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 135px;
+    height: 115px;
+    background-color: #262121;
+
+    /* border-bottom-left-radius: 25px; */
+    /* border-top-left-radius: 25px; */
+   padding: 7px;
+   
+}
+#opt{
+    font-size: 24px;
+    
+}
+.emploilundi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+}
+#l1{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+    width: 250px;
+    height: 115px;
+    border-radius: 15px;
+    
+}
+#l2{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+    width: 350px;
+    height: 115px;
+    border-radius: 15px;
+    
+}
+
+#l1{
+    background-color: rgb(242, 39, 242);
+    margin-left: 10%;
+}
+#pyth,#ph{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#l2{
+    background-color: rgb(85, 165, 165);
+    margin-left: 320px;
+}
+#al{ 
+    margin-left: 73%;
+}
+#mb,#al{
+  
+    width: 200px;
+    height: 115px;
+    background-color: darkmagenta;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+
+}
+
+#al span:nth-child(2),#mb span:nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+}
+.emploiMer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.choiAly{
+    width: 200px;
+    height: 115px;
+    background-color: darkmagenta;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.alcol{
+    background-color: orange;
+}

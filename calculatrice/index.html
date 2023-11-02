@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containeur">
+        <div class="calcul">
+            <h2>Calculatrice</h2>
+        </div>
+        <div class="text">
+            <div id="texcont"></div>
+        </div>
+        <div class="chiffre">
+            <button onclick="ajouterChiffre('7')">7</button>
+            <button onclick="ajouterChiffre('8')">8</button>
+            <button onclick="ajouterChiffre('9')">9</button>
+            <button onclick="ajouterOperateur('/')" id="division">/</button>
+            <button onclick="ajouterChiffre('4')">4</button>
+            <button onclick="ajouterChiffre('5')">5</button>
+            <button onclick="ajouterChiffre('6')">6</button>
+            <button id="multiple" onclick="ajouterOperateur('*')">*</button>
+            <button onclick="ajouterChiffre('1')">1</button>
+            <button onclick="ajouterChiffre('2')">2</button>
+            <button onclick="ajouterChiffre('3')">3</button>
+            <button id="soustraction" onclick="ajouterOperateur('-')">-</button>
+            <button id="point">.</button>
+            <button onclick="ajouterChiffre('0')">0</button>
+            <button id="egal" onclick="calculer()">=</button>
+            <button id="plus" onclick="ajouterOperateur('+')">+</button>
+        </div>
+        <div class="resultats">
+            <h2>Opérations:</h2>
+            <div id="Resultat"></div>
+        </div>
+    </div>
+     <script src="script.js"></script>
+</body>
+</html>

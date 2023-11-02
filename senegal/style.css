@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.conteneur{
+    padding: 16% 16%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    position: relative;
+}
+.senegal{
+    padding: 70px 100px;
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background-color: black;
+    color: white;
+    transition:color background-color  linear;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    
+   
+}
+.senegal:hover{
+    color: yellow;
+    background-color: white;
+}
+.senegal div{
+    z-index: 1;
+    
+}
+.senegal::after{
+    position: absolute;
+    content: "";
+    top: -15px;
+    left:-15px ;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background-color: darkgreen;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    transition-property: color background-color;
+    transition: color background-color;
+    transform-origin: top;
+}
+
+.senegal:hover::after{  
+    transform:perspective(700px) rotateX(80deg);
+    transform: color;
+}
+.senegal::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    transition-duration: 1s;
+    transition-delay: 1s;   
+    transition-property: color background-color;
+    transition: color background-color;
+    transform-origin: bottom ;
+}
+.senegal:hover::before{  
+    
+    transform:perspective(750px) rotateX(-80deg) ;
+    transform: color;
+   
+}

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containe{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 12% 12%;
+    background-color:#fff;
+    
+}
+.overable{
+    padding: 2% 3%;
+    border: 4px solid; 
+  position: relative;
+  overflow:hidden;
+  display: flex;
+  justify-content: center; 
+  font-size: 35px; 
+}
+
+.overable::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    content: "COOL!";
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(127, 35, 35);
+    position: absolute;
+    transition-property:top background-color;
+    transition-duration: 1s;
+    transform-origin: top;
+   
+}
+.overable:hover::after{
+    
+    top:0;
+   
+   
+}

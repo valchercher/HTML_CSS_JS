@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.conteneur{
+    padding: 15% 15%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.hover7
+
+{    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+    padding: 100px 150px;
+    border: 5px solid white;
+    background-color: white;
+    overflow: hidden;
+
+}
+.hover7::before{
+    content: "Hoverable";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+    left: 110%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 44, 88);
+    
+    transform: translate(0);
+    transform: rotateY(360deg);
+    transition-duration: .5s;
+    transition: color bachground-color ;
+
+}
+.hover7:hover::before{
+   
+    transform: rotate(0);
+    transform: translate(1);
+    
+    left: 0;
+}
+
+.hover7::after{
+    content: " Hoverable";
+    position: absolute;
+    right: 110%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+    background-color: rgb(34, 44, 88);
+    
+    transform:translate(0);
+    transform: rotateY(360deg);
+    transition-property:color background-color;
+    transition-duration: .5s;
+    transition: color bachground-color ;
+    transform-origin: center;
+}
+.hover7:hover::after{
+    
+    transform: rotate(0);
+    transform: translate(1);
+     
+   
+    right: 0;
+}

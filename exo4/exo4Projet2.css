@@ -1,0 +1,375 @@
+
+.clavier
+{
+    position:absolute;
+    left:12%;
+    bottom:35%;
+    background-color:grey;
+    text-align: center;
+    padding : 8px;
+    display : grid;
+    grid-template-columns: repeat(30,2em);
+    grid-template-rows:  repeat(6,2.9em);
+    grid-gap : 0.3em 0.3em; 
+    width: 67em;
+    border-radius: 0px;
+   
+   
+
+}  
+body{
+   background-color: white;
+   font-family: sans-serif;
+
+} 
+
+
+.clavier > div
+{
+   grid-column: span 2;
+   border-radius: 0.4em ;
+   background-color: black;
+   padding:1em;
+   color:white;
+   text-align: center;
+   font-size:small;
+
+}
+
+
+.clavier > div:nth-child(2)
+{
+   grid-column: span 24;
+  
+}
+
+
+
+
+.clavier > div:nth-child(18)
+{
+   grid-column: span 4;
+   background-color:  brown;
+   
+}
+
+
+.clavier > div:nth-child(19)
+{
+   grid-column: span 4;
+   background-color: brown;
+}
+
+.clavier > div:nth-child(33)
+{
+   grid-column: span 4;
+   background-color: brown;
+}
+
+.clavier > div:nth-child(45)
+{
+   grid-column: span 4;
+   background-color: brown;
+
+}
+
+.clavier > div:nth-child(46)
+{
+   grid-column: span 6;
+   background-color: brown;
+
+}
+.clavier  > div:nth-child(53)
+{
+position:relative ;
+right: 30px;
+}
+.clavier > div:nth-child(57)
+{
+   grid-column: span 4;
+   background-color: brown;
+}
+
+.clavier > div:nth-child(61)
+{
+   grid-column: span 4 ;
+   background-color: brown;
+   position: relative;
+   left: 2px;
+   width: 90px;
+}
+
+.clavier > div:nth-child(62)
+{
+    grid-column: span 10;
+    background-color: brown;
+    position:relative;
+    left: -22px;
+    
+}  
+
+.clavier > div:nth-child(63)
+{
+   background-color: brown;
+   position:relative;
+   left: -22px;
+   width: 60px;
+}
+.clavier > div:nth-child(64)
+{
+   position:relative;
+   left: -4px;
+}
+
+
+.clavier > div:nth-child(65)
+{
+   position:relative;
+   left: 1px;
+}
+
+
+.clavier > div:nth-child(65) 
+{
+   display: grid;
+    
+   grid-template-columns: repeat(6 , 1.7em);
+   grid-template-rows: repeat(2 , 1.6em);
+   background-color: rgba(128,128,128,0.6);
+   grid-gap: 0.4em 0.8em;
+   color:aliceblue;
+   text-align:center;
+   width: 12.5em;
+}
+
+
+.clavier > div:nth-child(65) > div
+{
+   position:relative;
+   right:0.8em;
+   bottom:1em;
+   grid-column: span 2;
+   border-radius: 4em ;
+   background-color:black;
+
+}
+
+.clavier > div:nth-child(65) > div:nth-child(1)
+{
+   background-color: rgba(128,128,128,0);
+   
+}
+.clavier > div:nth-child(65) > div:nth-child(3)
+{
+   background-color: rgba(128,128,128,0);
+}
+
+
+
+.clavier > div:nth-child(19)
+{
+   width:6.6em;
+}
+.clavier > div:nth-child(20)
+{
+   position:relative;
+   right:2.4em;
+}
+
+
+.clavier > div:nth-child(21)
+{
+   position:relative;
+   right:2.4em;
+}
+
+
+.clavier > div:nth-child(22)
+{
+   position:relative;
+   right:2.4em;
+}
+
+
+.clavier > div:nth-child(23)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(24)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(25)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(26)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(27)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(28)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(29)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(30)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(31)
+{
+   position:relative;
+   right:2.4em;
+}
+
+.clavier > div:nth-child(32)
+{
+   position:relative;
+   right:2.4em;
+   width: 3.4em;
+}
+
+.clavier > div:nth-child(3)
+{
+  width: 2em;
+}
+
+.clavier > div:nth-child(4)
+{
+   width: 2em;
+   position:relative;
+   right:1.2em;
+}
+
+.clavier > div:nth-child(18)
+{
+   width:6.6em;
+}
+
+
+.clavier > div:nth-child(45)
+{
+
+   width:6.9em;
+}
+
+
+.clavier > div:nth-child(46)
+{
+
+   width:12em;
+}
+
+.clavier > div:nth-child(47)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+
+.clavier > div:nth-child(48)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+
+.clavier > div:nth-child(49)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+  
+
+.clavier > div:nth-child(50)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+
+.clavier > div:nth-child(51)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+
+.clavier > div:nth-child(52)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+  
+.clavier > div:nth-child(53)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+
+.clavier > div:nth-child(54)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+.clavier > div:nth-child(55)
+{
+   position:relative;
+   right:2.5em;
+
+
+}
+.clavier > div:nth-child(56)
+{
+   position:relative;
+   right:2.5em;
+
+
+
+}
+
+.clavier > div:nth-child(57)
+{
+   position:relative;
+   right:2.5em;
+   width:9.3em ;
+   box-shadow:white;
+
+
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatrice en JavaScript</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="resultat" disabled>
+	</div>
+	<div>
+		<button onclick="ajouterChiffre('1')">1</button>
+		<button onclick="ajouterChiffre('2')">2</button>
+		<button onclick="ajouterChiffre('3')">3</button>
+		<button onclick="ajouterOperation('+')">+</button>
+	</div>
+	<div>
+		<button onclick="ajouterChiffre('4')">4</button>
+		<button onclick="ajouterChiffre('5')">5</button>
+		<button onclick="ajouterChiffre('6')">6</button>
+		<button onclick="ajouterOperation('-')">-</button>
+	</div>
+	<div>
+		<button onclick="ajouterChiffre('7')">7</button>
+		<button onclick="ajouterChiffre('8')">8</button>
+		<button onclick="ajouterChiffre('9')">9</button>
+		<button onclick="ajouterOperation('*')">*</button>
+	</div>
+	<div>
+		<button onclick="ajouterChiffre('0')">0</button>
+		<button onclick="effacer()">C</button>
+		<button onclick="calculer()">=</button>
+		<button onclick="ajouterOperation('/')">/</button>
+	</div>
+
+	<script>
+		var chiffres = [];
+		var operation = '';
+		var resultat = document.getElementById('resultat');
+
+		function ajouterChiffre(chiffre) {
+			chiffres.push(chiffre);
+			resultat.value = chiffres.join('');
+		}
+
+		function ajouterOperation(op) {
+			operation = op;
+			chiffres = [];
+		}
+
+		function calculer() {
+			var a = parseFloat(chiffres.join(''));
+			var b = parseFloat(resultat.value);
+			var res = 0;
+			switch(operation) {
+				case '+':
+					res = a + b;
+					break;
+				case '-':
+					res = b - a;
+					break;
+				case '*':
+					res = a * b;
+					break;
+				case '/':
+					res = b / a;
+					break;
+			}
+			resultat.value = res;
+			chiffres = [];
+			operation = '';
+		}
+
+		function effacer() {
+			chiffres = [];
+			operation = '';
+			resultat.value = '';
+		}
+	</script>
+</body>
+</html>

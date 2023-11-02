@@ -1,0 +1,157 @@
+
+
+.grille
+{ 
+   background-color: gray;
+   text-align: center;
+   padding : 10px white;
+   display : grid;
+  
+   grid-template-columns: repeat(30,50px);
+   grid-template-rows:  repeat(6,50px);
+   grid-gap : 11px 11px; 
+   margin-top: 154px ;
+   text-align: center;
+
+}
+
+
+.grille div
+{
+   grid-column: span 2;
+   border: 2px solid ;
+}
+
+
+.grille  div:nth-child(2)
+{
+   grid-column: span 24;
+}
+
+
+
+
+.grille  div:nth-child(18)
+{
+   grid-column: span 4;
+   background-color: brown;
+}
+.grille  div:nth-child(19)
+{
+   grid-column: span 4;
+}
+
+
+.grille  div:nth-child(33)
+{
+   grid-column: span 5;
+   background-color:  brown;
+}
+.grille  div:nth-child(45)
+{
+   grid-column: span 3;
+   background-color:  brown;
+}
+.grille  div:nth-child(46)
+{
+   grid-column: span 3;
+   background-color:  brown;
+}
+.grille  div:nth-child(58)
+{
+   grid-column: span 5;
+   background-color:  brown;
+}
+.grille  div:nth-child(62)
+{
+   
+   background-color:  brown;
+}
+
+.grille  div:nth-child(63)
+{
+   grid-column: span 12;
+   background-color:  brown;
+}
+.grille  div:nth-child(64)
+{
+   
+   background-color:  brown;
+
+}
+.grille div:nth-child(66)
+{
+   grid-row: span 0.5px;
+   grid-gap: 2px 2px;
+   margin-top: 25px;
+
+   
+   
+}
+.grille div:nth-child(67)
+{ 
+   background-color: rgb(90, 45, 45);
+   text-align: center;
+   padding : 2px ;
+   display : grid;
+  
+   grid-template-columns: repeat(1,2px);
+   grid-template-rows:  repeat(2,2px);
+   
+   margin-top: 5px ;
+   text-align: center;
+
+}
+
+
+.grille div:nth-child(67) div
+{
+   grid-column: span 2;
+   border: 2px solid white;
+}
+
+.grille div:nth-child(67) >div:nth-child(1)
+{
+   grid-row: span 2;
+  margin-top: -20px;
+   padding: 5px;
+   
+   
+    
+  
+}
+.grille div:nth-child(67) div:nth-child(2)
+{
+   grid-row: span 2;
+  margin-top: 2px;
+   padding: 2px;
+   
+    
+  
+}
+.grille div:nth-child(68)
+{
+   grid-column: span 2; 
+   margin-top: 25px;
+   align-items: center;
+  
+}
+
+
+.grille div:nth-child(even)
+{
+ 
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 7px;
+    
+}
+.grille div:nth-child(odd)
+{
+    color: white;
+    font-size: 20px;
+    top: 10px;
+    padding: 7px;
+  
+}
